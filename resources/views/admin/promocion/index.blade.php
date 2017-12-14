@@ -46,10 +46,12 @@ PROMOCION
 					<tr>
 						<td>{!! $row->nombre !!}</td>
 						<td>{!! $row->descuento !!}</td>
+						@if($row->id != 1)
 						<td>
 							<a href="{!! route('admin.promocion.edit',$row->id) !!}", class="btn btn-inline btn-primary-outline">EDITAR</a>
 							<a href="{!! route('admin.promocion.delete',$row->id ) !!}", class="btn btn-inline btn-danger-outline">ELIMINAR</a>
 						</td>
+						@endif
 					</tr>
 					@endforeach
 				</tbody>

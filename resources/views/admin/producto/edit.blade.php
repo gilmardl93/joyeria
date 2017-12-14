@@ -38,6 +38,7 @@ EDITAR PRODUCTO
 			<img src="{!! asset('storage/'.$row->imagen3) !!}" width="100" height="80"><br>
 			{!! Field::file('imagen4') !!}
 			<img src="{!! asset('storage/'.$row->imagen4) !!}" width="100" height="80"><br><br>
+			{!! Field::text('precio', $row->precio) !!}
 			<label>Categoria</label>
 			{!! Form::select('idcategoria', $categoria, $row->idcategoria, ['class' => 'form-control']) !!}<br>
 			<label>Marca</label>

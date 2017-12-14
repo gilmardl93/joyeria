@@ -1,0 +1,2 @@
+[10-Nov-2017 21:03:52 America/New_York] PHP Fatal error:  Class 'Illuminate\Foundation\Http\Middleware\TrimStrings' not found in /home/reyjesa/public_html/joyeria/app/Http/Middleware/TrimStrings.php on line 8
+[29-Nov-2017 18:56:30 America/New_York] PHP Fatal error:  Class 'Illuminate\Foundation\Http\Middleware\TrimStrings' not found in /home/reyjesa/public_html/joyeria/app/Http/Middleware/TrimStrings.php on line 7

@@ -22,8 +22,8 @@ class ProductoController extends Controller
     public function create()
     {
     	$categoria  = Categoria::pluck('nombre','id');
-    	$marca  = Categoria::pluck('nombre','id');
-    	$promocion  = Categoria::pluck('nombre','id');
+    	$marca  = Marca::pluck('nombre','id');
+    	$promocion  = Promocion::pluck('nombre','id');
     	return view('admin.producto.create', compact(['categoria', 'marca', 'promocion']));
     }
 
@@ -62,7 +62,7 @@ class ProductoController extends Controller
         	$imagen4 = "";
         }    
 
-        Producto::create(['slug' => $request->nombre, 'nombre' => $request->nombre, 'descripcion' => $request->descripcion, 'imagen1' => $imagen1, 'imagen2' => $imagen2, 'imagen3' => $imagen3, 'imagen4' => $imagen4, 'idcategoria' => $request->idcategoria, 'idmarca' => $request->idmarca, 'idpromocion' => $request->idpromocion]);
+        Producto::create(['slug' => $request->nombre, 'nombre' => $request->nombre, 'descripcion' => $request->descripcion, 'imagen1' => $imagen1, 'imagen2' => $imagen2, 'imagen3' => $imagen3, 'imagen4' => $imagen4, 'idcategoria' => $request->idcategoria, 'idmarca' => $request->idmarca, 'idpromocion' => $request->idpromocion,'precio' => $request->precio]);
        	return redirect('producto')->with('success','Producto registrado');
     } 
 
@@ -110,7 +110,7 @@ class ProductoController extends Controller
         	$imagen4 = $request->img4;
         }    
 
-        Producto::Existe($request->id)->update(['slug' => Str::slug($request->nombre), 'nombre' => $request->nombre, 'descripcion' => $request->descripcion, 'imagen1' => $imagen1, 'imagen2' => $imagen2, 'imagen3' => $imagen3, 'imagen4' => $imagen4, 'idcategoria' => $request->idcategoria, 'idmarca' => $request->idmarca, 'idpromocion' => $request->idpromocion]);
+        Producto::Existe($request->id)->update(['slug' => Str::slug($request->nombre), 'nombre' => $request->nombre, 'descripcion' => $request->descripcion, 'imagen1' => $imagen1, 'imagen2' => $imagen2, 'imagen3' => $imagen3, 'imagen4' => $imagen4, 'idcategoria' => $request->idcategoria, 'idmarca' => $request->idmarca, 'idpromocion' => $request->idpromocion, 'precio' => $request->precio]);
        	return redirect('producto')->with('success','Producto registrado');
     }
 

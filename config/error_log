@@ -1,0 +1,188 @@
+[10-Nov-2017 19:54:32 America/New_York] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/reyjesa/public_html/joyeria/config/app.php on line 144
+[10-Nov-2017 19:58:02 America/New_York] PHP Fatal error:  Call to undefined function resource_path() in /home/reyjesa/public_html/joyeria/config/view.php on line 17
+[10-Nov-2017 19:59:42 America/New_York] PHP Fatal error:  Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/mail.php on line 19
+[10-Nov-2017 20:00:32 America/New_York] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/reyjesa/public_html/joyeria/config/auth.php on line 70
+[10-Nov-2017 20:01:07 America/New_York] PHP Fatal error:  Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/queue.php on line 18
+[10-Nov-2017 20:03:22 America/New_York] PHP Fatal error:  Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/cache.php on line 18
+[10-Nov-2017 20:19:21 America/New_York] PHP Fatal error:  Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/session.php on line 19
+[10-Nov-2017 20:21:32 America/New_York] PHP Fatal error:  Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/database.php on line 16
+[10-Nov-2017 20:23:12 America/New_York] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/reyjesa/public_html/joyeria/config/services.php on line 33
+[10-Nov-2017 20:41:27 America/New_York] PHP Fatal error:  Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/filesystems.php on line 16
+[10-Nov-2017 20:45:03 America/New_York] PHP Fatal error:  Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/broadcasting.php on line 18
+[11-Nov-2017 02:22:58 America/New_York] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/reyjesa/public_html/joyeria/config/services.php on line 33
+[11-Nov-2017 05:59:04 America/New_York] PHP Fatal error:  Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/filesystems.php on line 16
+[11-Nov-2017 05:59:55 America/New_York] PHP Fatal error:  Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/cache.php on line 18
+[11-Nov-2017 06:43:28 America/New_York] PHP Fatal error:  Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/broadcasting.php on line 18
+[11-Nov-2017 06:53:52 America/New_York] PHP Fatal error:  Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/session.php on line 19
+[12-Nov-2017 15:48:45 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/queue.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/queue.php on line 18
+[19-Nov-2017 14:47:55 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/cache.php on line 18
+[19-Nov-2017 14:51:05 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/services.php on line 18
+[19-Nov-2017 16:53:25 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/session.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/session.php on line 19
+[19-Nov-2017 17:18:46 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/app.php on line 16
+[19-Nov-2017 17:23:09 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/mail.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/mail.php on line 19
+[19-Nov-2017 17:51:06 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/broadcasting.php on line 18
+[19-Nov-2017 17:59:43 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/filesystems.php on line 16
+[19-Nov-2017 17:59:46 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/database.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/database.php on line 16
+[19-Nov-2017 17:59:50 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/queue.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/queue.php on line 18
+[19-Nov-2017 17:59:54 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function resource_path() in /home/reyjesa/public_html/joyeria/config/view.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/view.php on line 17
+[20-Nov-2017 00:40:47 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/filesystems.php on line 16
+[20-Nov-2017 03:21:24 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/queue.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/queue.php on line 18
+[29-Nov-2017 17:46:10 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/app.php on line 16
+[29-Nov-2017 17:50:11 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function resource_path() in /home/reyjesa/public_html/joyeria/config/view.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/view.php on line 17
+[29-Nov-2017 17:52:06 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/mail.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/mail.php on line 19
+[29-Nov-2017 17:55:46 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/queue.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/queue.php on line 18
+[29-Nov-2017 17:56:36 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/cache.php on line 18
+[29-Nov-2017 18:08:46 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/session.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/session.php on line 19
+[29-Nov-2017 18:14:35 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/database.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/database.php on line 16
+[29-Nov-2017 18:18:26 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/services.php on line 18
+[29-Nov-2017 18:32:41 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/filesystems.php on line 16
+[29-Nov-2017 18:38:31 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/broadcasting.php on line 18
+[07-Dec-2017 01:16:59 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/queue.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/queue.php on line 18
+[08-Dec-2017 05:05:04 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/session.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/session.php on line 19
+[08-Dec-2017 05:05:35 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/mail.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/mail.php on line 19
+[08-Dec-2017 05:05:41 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/broadcasting.php on line 18
+[09-Dec-2017 11:53:58 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/app.php on line 16
+[09-Dec-2017 11:58:28 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/mail.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/mail.php on line 19
+[09-Dec-2017 11:58:58 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function resource_path() in /home/reyjesa/public_html/joyeria/config/view.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/view.php on line 17
+[09-Dec-2017 12:01:58 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/queue.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/queue.php on line 18
+[09-Dec-2017 12:02:03 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/cache.php on line 18
+[09-Dec-2017 12:08:48 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/session.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/session.php on line 19
+[09-Dec-2017 12:20:43 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/database.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/database.php on line 16
+[09-Dec-2017 12:20:53 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/services.php on line 18
+[09-Dec-2017 12:38:48 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/filesystems.php on line 16
+[09-Dec-2017 12:43:38 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/broadcasting.php on line 18
+[09-Dec-2017 18:20:37 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/cache.php on line 18
+[09-Dec-2017 21:34:03 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/app.php on line 16
+[09-Dec-2017 21:53:44 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function resource_path() in /home/reyjesa/public_html/joyeria/config/view.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/view.php on line 17
+[10-Dec-2017 00:38:31 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/filesystems.php on line 16
+[10-Dec-2017 07:34:51 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/services.php on line 18
+[10-Dec-2017 08:22:12 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/reyjesa/public_html/joyeria/config/database.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/reyjesa/public_html/joyeria/config/database.php on line 16

@@ -11,7 +11,7 @@ ACTUALIZAR REDES SOCIALES
 @section('content')
 	<section class="card card-blue mb-3">
 		<header class="card-header">
-			<a href="{!! route('admin.promocion.index') !!}" class="btn btn-inline btn-danger-outline">ATRAS</a>
+			REDES SOCIALES	 
 		</header>
 		<div class="card-block">
 			{!! Form::open(['method' => 'POST', 'route' => 'admin.social.update']) !!}

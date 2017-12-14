@@ -1,18 +1,29 @@
 @extends('layouts.page.index')
 
 @section('content')
+<div class="men-wear-top">
+				
+	<div  id="top" class="callbacks_container">
+		<ul class="rslides" id="slider3">
+			@foreach($banner as $row)
+			<li>
+				<img class="img-responsive" src="{!! asset('storage/'.$row->imagen) !!}" alt=" "/>
+			</li>
+			@endforeach
+		</ul>
+	</div>
+	<div class="clearfix"></div>
+</div>
 @include('layouts.page.partials.banner2')
       <div class="agile_last_double_sectionw3ls">
       		@foreach($promocion as $pro)
             <div class="col-md-6 multi-gd-img multi-gd-text ">
 					<a href="{!! route('page.promocion.show',$pro->slug) !!}"><img src="{!! asset('storage/'.$pro->imagen) !!}" alt=" "><h4> 
-					<span>{!! $pro->descuento !!}</span> {!! $pro->nombre !!}</h4></a>					
+					<span>{!! $pro->descuento !!} %</span> {!! $pro->nombre !!}</h4></a>					
 			</div>
 			@endforeach
 			<div class="clearfix"></div>
-	   </div>							
-<!--/grids-->
-<!-- /new_arrivals --> 
+	   </div>						
 	<div class="new_arrivals_agile_w3ls_info"> 
 		<div class="container">
 		    <h3 class="wthree_text_info">Nuestros <span>Productos</span></h3>		
@@ -48,4 +59,26 @@
 			</div>
 		</div>
 		<!-- //new_arrivals --> 
+@stop
+
+@section('js-script')
+{!! Html::script('page/js/responsiveslides.min.js') !!}
+<script>						
+	$(function () {
+						
+		$("#slider3").responsiveSlides({
+			auto: true,
+			pager: true,
+			nav: true,
+			speed: 500,
+			namespace: "callbacks",
+		before: function () {
+			$('.events').append("<li>before event fired.</li>");
+			},
+		after: function () {
+			$('.events').append("<li>after event fired.</li>");
+			}
+		});
+	});
+</script>
 @stop

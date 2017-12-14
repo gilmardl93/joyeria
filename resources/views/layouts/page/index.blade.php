@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
 <title>@yield('titulo-pagina')</title>
 <!--/tags -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 <meta name="keywords" content="Elite Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--//tags -->
 {!! Html::style('page/css/bootstrap.css') !!}
 {!! Html::style('page/css/style.css') !!}
 {!! Html::style('page/css/font-awesome.css') !!}
 {!! Html::style('page/css/easy-responsive-tabs.css') !!}
+@yield('css-style')
 <!-- //for bootstrap working -->
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
 <link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic' rel='stylesheet' type='text/css'>
@@ -129,6 +128,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h3>INGRESE SU EMAIL Y RECIBA INFORMACION !</h3>
 			</div>
 			<div class="col-sm-6 newsright">
+				@if(session('success'))
+					    <div class="alert alert-success">
+							{!! session('success') !!}			
+						</div>
+						@endif
 				{!! Form::open(['method' => 'POST', 'route' => 'page.suscribirse.store']) !!}
 					<input type="email" placeholder="Ingrese su email..." name="email" required="">
 					<input type="submit" value="ENVIAR">
@@ -137,7 +141,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 		<div class="clearfix"></div>
 	</div>
-		<p class="copy-right">&copy 2017. Todos los derechos reservados | Diseñado por <a href="http://w3layouts.com/">Gilmar Moreno</a></p>
+		<p class="copy-right">&copy 2017. Todos los derechos reservados | Dise&ntilde;ado por <a href="https://www.facebook.com/gilmar.moreno.7186" target="_lblank">Gilmar Moreno</a></p>
 	</div>
 </div>
 <!-- //footer -->
@@ -146,8 +150,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!-- js -->
 {!! Html::script('page/js/jquery-2.1.4.min.js') !!}
-{!! Html::script('page/js/modernizr.custom.js') !!}
-{!! Html::script('page/js/minicart.min.js') !!}
 <script>
 	// Mini Cart
 	paypal.minicart.render({
@@ -158,9 +160,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		paypal.minicart.reset();
 	}
 </script>
-
-	<!-- //cart-js --> 
-<!-- script for responsive tabs -->				
+@yield('js-script')		
 {!! Html::script('page/js/easy-responsive-tabs.js') !!}	
 <script>
 	$(document).ready(function () {
@@ -184,15 +184,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	});
 	});
 </script>
-<!-- //script for responsive tabs -->		
-<!-- stats -->
 {!! Html::script('page/js/jquery.waypoints.min.js') !!}	
 {!! Html::script('page/js/jquery.countup.js') !!}	
-	<script>
-		$('.counter').countUp();
-	</script>
-<!-- //stats -->
-<!-- start-smoth-scrolling -->
+<script>
+	$('.counter').countUp();
+</script>
 {!! Html::script('page/js/move-top.js') !!}	
 {!! Html::script('page/js/jquery.easing.min.js') !!}	
 <script type="text/javascript">
@@ -203,26 +199,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 	});
 </script>
-<!-- here stars scrolling icon -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
-								
-			$().UItoTop({ easingType: 'easeOutQuart' });
-								
-			});
-	</script>
-<!-- //here ends scrolling icon -->
-
-
-<!-- for bootstrap working -->
+<script type="text/javascript">
+	$(document).ready(function() {
+		$().UItoTop({ easingType: 'easeOutQuart' });						
+	});
+</script>
 {!! Html::script('page/js/bootstrap.js') !!}	
 </body>
 </html>

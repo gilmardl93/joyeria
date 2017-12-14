@@ -26,8 +26,8 @@
 	<header class="site-header">
 	    <div class="container-fluid">
 	        <a href="{!! route('admin.home.index') !!}" class="site-logo">
-	            <img class="hidden-md-down" src="img/logo-2.png" alt="">
-	            <img class="hidden-lg-down" src="img/logo-2-mob.png" alt="">
+	            <img class="hidden-md-down" src="logo.jpg" alt="">
+	            <img class="hidden-lg-down" src="logo.jpg" alt="">
 	        </a>
 	
 	        <button class="hamburger hamburger--htla">

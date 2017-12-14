@@ -91,9 +91,23 @@ Route::group(['namespace' => 'Admin', 'middleware' => 'auth'], function(){
 		Route::get('suscripcion-eliminar/{id}','SuscripcionController@delete')->name('admin.suscripcion.delete');
 	});
 
+	Route::group(['namespace' => 'FrmContactos'], function(){
+		Route::get('frmcontactos','FrmContactosController@index')->name('admin.frmcontactos.index');	
+		Route::get('frmcontactos-eliminar/{id}','FrmContactosController@delete')->name('admin.frmcontactos.delete');
+	});
+
 	Route::group(['namespace' => 'Social'], function(){
 		Route::get('social','SocialController@index')->name('admin.social.index');	
 		Route::post('social-actualizar','SocialController@update')->name('admin.social.update');
+	});
+
+	Route::group(['namespace' => 'Banner'], function(){
+		Route::get('banner','BannerController@index')->name('admin.banner.index');	
+		Route::get('banner-nuevo','BannerController@create')->name('admin.banner.create');
+		Route::get('banner-editar/{id}','BannerController@edit')->name('admin.banner.edit');	
+		Route::get('banner-eliminar/{id}','BannerController@delete')->name('admin.banner.delete');
+		Route::post('banner-registrar','BannerController@store')->name('admin.banner.store');
+		Route::post('banner-actualizar','BannerController@update')->name('admin.banner.update');
 	});
 
 });
@@ -102,6 +116,7 @@ Route::group(['namespace' => 'Page'], function(){
 	Route::group(['namespace' => 'Home'], function(){
 		Route::get('/','HomeController@index')->name('page.home.index');
 		Route::get('contactos','HomeController@contactos')->name('page.home.contactos');
+		Route::get('noticias','HomeController@noticias')->name('page.home.noticias');
 		Route::get('quienes-somos','HomeController@somos')->name('page.home.somos');
 	});
 
@@ -124,6 +139,10 @@ Route::group(['namespace' => 'Page'], function(){
 	Route::group(['namespace' => 'Producto'], function(){
 		Route::get('ver-producto/{slug}','ProductoController@show')->name('page.producto.show');
 		Route::post('buscar-producto','ProductoController@search')->name('page.producto.search');
+	});
+
+	Route::group(['namespace' => 'Noticias'], function(){
+		Route::get('ver-noticia/{slug}','NoticiasController@show')->name('page.noticias.show');
 	});
 });
 

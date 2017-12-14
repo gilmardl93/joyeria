@@ -28,6 +28,7 @@ NUEVO PRODUCTO
 			{!! Field::file('imagen2') !!}
 			{!! Field::file('imagen3') !!}
 			{!! Field::file('imagen4') !!}
+			{!! Field::text('precio') !!}
 			<label>Promocion</label>
 			{!! Form::select('idpromocion', $promocion, null, ['class' => 'form-control']) !!}<br>
 			<label>Marca</label>

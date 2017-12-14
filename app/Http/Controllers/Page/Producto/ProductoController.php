@@ -13,10 +13,21 @@ class ProductoController extends Controller
 {
     public function show($slug)
     {
-    	$producto = Producto::Slug($slug)->get();
-    	$categoria = Categoria::all();
+    	$producto 	= Producto::Slug($slug)->get();
+    	$categoria 	= Categoria::all();
         $social     = Social::all();
-        $somos     = Somos::all();
-    	return view('page.producto.show', compact(['producto','categoria','social','somos']));
+        $somos     	= Somos::all();
+        $productos 	= Producto::all();
+    	return view('page.producto.show', compact(['producto','categoria','social','somos','productos']));
+    }
+
+    public function search(Request $request)
+    {
+    	$producto 	= Producto::Nombre($request->nombre)->get();
+    	$categoria 	= Categoria::all();
+        $social     = Social::all();
+        $somos     	= Somos::all();
+        $productos 	= Producto::all();
+    	return view('page.producto.search', compact(['producto','categoria','social','somos','productos']));
     }
 }

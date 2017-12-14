@@ -11,10 +11,10 @@
 				</div>
 				<div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
 				  <ul class="nav navbar-nav menu__list">
-					<li class="active menu__item menu__item--current">
+					<li class="active menu__item menu__item{!! $listarIndex ?? '' !!}">
 						<a class="menu__link" href="{!! route('page.home.index') !!}">Inicio </a>
 					</li>
-					<li class=" menu__item">
+					<li class=" menu__item{!! $listarSomos ?? '' !!}">
 						<a class="menu__link" href="{!! route('page.home.somos') !!}">Quienes Somos</a>
 					</li>
 					<li class="dropdown menu__item">
@@ -22,7 +22,7 @@
 							<ul class="dropdown-menu multi-column columns-3">
 								<div class="agile_inner_drop_nav_info">
 									<div class="col-sm-6 multi-gd-img1 multi-gd-text ">
-										<a href="mens.html"><img src="{!! asset('page/images/gemas.jpg') !!}" alt=" "/></a>
+										<a href="#"><img src="{!! asset('page/images/gemas.jpg') !!}" alt=" "/></a>
 									</div>
 									<div class="col-sm-3 multi-gd-img">
 										<ul class="multi-column-dropdown">
@@ -35,8 +35,8 @@
 								</div>
 							</ul>
 					</li>
-					<li class=" menu__item"><a class="menu__link" href="{!! route('page.home.contactos') !!}">Noticias</a></li>
-					<li class=" menu__item"><a class="menu__link" href="{!! route('page.home.contactos') !!}">Contactos</a></li>
+					<li class=" menu__item{!! $listarNoticias ?? '' !!}"><a class="menu__link" href="{!! route('page.home.noticias') !!}">Noticias</a></li>
+					<li class=" menu__item{!! $listarContactos ?? '' !!}"><a class="menu__link" href="{!! route('page.home.contactos') !!}">Contactos</a></li>
 				  </ul>
 				</div>
 			  </div>

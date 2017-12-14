@@ -1,0 +1,2 @@
+[10-Nov-2017 21:03:42 America/New_York] PHP Fatal error:  Class 'Illuminate\Routing\Controller' not found in /home/reyjesa/public_html/joyeria/app/Http/Controllers/Controller.php on line 11
+[29-Nov-2017 18:56:41 America/New_York] PHP Fatal error:  Class 'Illuminate\Routing\Controller' not found in /home/reyjesa/public_html/joyeria/app/Http/Controllers/Controller.php on line 10

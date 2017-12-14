@@ -12,7 +12,7 @@ class Producto extends Model
 
     protected $table = "producto";
 
-    protected $fillable = ['slug','nombre','descripcion','imagen1','imagen2','imagen3','imagen4','idpromocion','idmarca','idcategoria'];
+    protected $fillable = ['slug','nombre','descripcion','imagen1','imagen2','imagen3','imagen4','idpromocion','idmarca','idcategoria','precio'];
 
     public function categoria()
     {
@@ -27,6 +27,21 @@ class Producto extends Model
     public function marca()
     {
         return $this->hasOne(Marca::class,'id','idmarca');
+    }
+
+    public function scopeNombre($cadenaSQL, $nombre)
+    {
+        return $cadenaSQL->where('nombre','like',"%$nombre%");
+    }
+
+    public function scopeBCategoria($cadenaSQL, $id)
+    {
+        return $cadenaSQL->where('idcategoria',$id);
+    }
+
+    public function scopeBPromocion($cadenaSQL, $id)
+    {
+        return $cadenaSQL->where('idpromocion',$id);
     }
 
     public function scopeExiste($cadenaSQL, $id)

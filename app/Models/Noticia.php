@@ -19,6 +19,12 @@ class Noticia extends Model
     	return $cadenaSQL->where('id',$id);
     }
 
+    public function scopeSlug($cadenaSQL, $slug)
+    {
+        return $cadenaSQL->where('slug',$slug);
+    }
+
+
     public function setTituloAttribute($value)
     {
         $this->attributes['titulo']  = trim(Str::upper($value));

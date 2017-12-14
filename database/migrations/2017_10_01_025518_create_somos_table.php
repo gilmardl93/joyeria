@@ -17,7 +17,7 @@ class CreateSomosTable extends Migration
             $table->increments('id');
             $table->string('titulo');
             $table->text('descripcion');
-            $table->string('imagen');
+            $table->string('imagen')->nullable();
             $table->timestamps();
         });
     }
