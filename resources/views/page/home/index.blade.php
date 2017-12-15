@@ -29,7 +29,7 @@
 		    <h3 class="wthree_text_info">Nuestros <span>Productos</span></h3>		
 				<div id="horizontalTab">
 						<ul class="resp-tabs-list">
-							<li> NOVEDADES</li>
+							<li style="color:white"> NOVEDADES</li>
 						</ul>
 					<div class="resp-tabs-container">
 						<div class="tab1">

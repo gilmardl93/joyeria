@@ -24,7 +24,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<ul>
 		    <li> <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Iniciar Sesion </a></li>
 			<li><i class="fa fa-phone" aria-hidden="true"></i> Telefono : 01 566-3514</li>
-			<li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com">ventas@espinoza.com.pe
+			<li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com">informes@espinoza.com.pe
 </a></li>
 		</ul>
 	</div>
@@ -97,16 +97,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- footer -->
 <div class="footer">
 	<div class="footer_agile_inner_info_w3l">
-		<div class="col-md-3 footer-left">
+		<div class="col-md-2 footer-left">
 			@foreach($somos as $som)
 			<h2><a href="{!! route('page.home.somos') !!}">{!! $som->titulo !!} </a></h2>
 			<br>
 			{!! str_limit($som->descripcion,100) !!}
 			@endforeach
 		</div>
-		<div class="col-md-9 footer-right">
+		<div class="col-md-10 footer-right">
 			<div class="sign-grds">
-				<div class="col-md-4 sign-gd">
+				<div class="col-md-3 sign-gd">
 					<h4>Nuestras <span>Categorias</span> </h4>
 					@foreach($categoria as $row)
 					<ul>
@@ -114,18 +114,45 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</ul>
 					@endforeach
 				</div>
-				<div class="col-md-5 sign-gd flickr-post">
-					<h4>Face <span>Book</span></h4>
+				<div class="col-md-4 sign-gd flickr-post">
+					<h4>Face<span>Book</span></h4>
 					<ul>
+						<div class="fb-page" data-href="https://www.facebook.com/joyerias.espinoza/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/joyerias.espinoza/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/joyerias.espinoza/">Joyerias Espinoza</a></blockquote></div>
 					</ul>
+				</div>
+				<div class="col-md-3 sign-gd">
+					<h4>Con<span>tactos</span> </h4>
+					@foreach($contactos as $row)
+					<div class="mail-agileits-w3layouts">
+								<i class="fa fa-volume-control-phone" aria-hidden="true" style="color:white"></i>
+								<div class="contact-right">
+									<p style="color:white">Telefono </p><span>{!! $row->telefono1 !!} / {!! $row->telefono2 !!}</span>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="mail-agileits-w3layouts">
+								<i class="fa fa-envelope-o" aria-hidden="true" style="color:white"></i>
+								<div class="contact-right">
+									<p style="color:white">E-Mail </p><a href="mailto:info@example.com">{!! $row->email1 !!} <br> {!! $row->email2 !!}</a>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="mail-agileits-w3layouts">
+								<i class="fa fa-map-marker" aria-hidden="true" style="color:white"></i>
+								<div class="contact-right">
+									<p style="color:white">Direccion</p><span>{!! $row->direccion !!}</span>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+					@endforeach
 				</div>
 				<div class="clearfix"></div>
 			</div>
 		</div>
 		<div class="clearfix"></div>
-			<div class="agile_newsletter_footer">
-					<div class="col-sm-6 newsleft">
-				<h3>INGRESE SU EMAIL Y RECIBA INFORMACION !</h3>
+		<div class="agile_newsletter_footer">
+			<div class="col-sm-6 newsleft">
+				<h3>INGRESE SU EMAIL Y RECIBA INFORMACIÓN !</h3>
 			</div>
 			<div class="col-sm-6 newsright">
 				@if(session('success'))
@@ -139,8 +166,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				{!! Form::close() !!}
 			</div>
 
-		<div class="clearfix"></div>
-	</div>
+			<div class="clearfix"></div>
+		</div>
 		<p class="copy-right">&copy 2017. Todos los derechos reservados | Dise&ntilde;ado por <a href="https://www.facebook.com/gilmar.moreno.7186" target="_lblank">Gilmar Moreno</a></p>
 	</div>
 </div>
@@ -150,6 +177,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!-- js -->
 {!! Html::script('page/js/jquery-2.1.4.min.js') !!}
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.11';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <script>
 	// Mini Cart
 	paypal.minicart.render({

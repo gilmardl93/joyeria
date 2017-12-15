@@ -5,10 +5,11 @@
 				<li><a href="{!! url($row->facebook) !!}" class="facebook" target="_lblank">
 					<div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
 					<div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div></a></li>
-				@elseif(!empty($row->twitter))
-				<li><a href="{!! url($row->twitter) !!}" class="twitter" target="_lblank">> 
-					<div class="front"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-					<div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div></a></li>
+				@endif
+				@if(!empty($row->twitter))
+				<li><a href="{!! url($row->twitter) !!}" class="instagram" target="_lblank">> 
+					<div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+					<div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div></a></li>
 				@endif
 				@endforeach
 			</ul>

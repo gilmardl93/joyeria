@@ -17,6 +17,7 @@ class HomeController extends Controller
 {
     public function index()
     {
+        $contactos  = Contacto::all();
     	$productos  = Producto::take(12)->inRandomOrder()->get();
         $categoria  = Categoria::all();
         $promocion  = Promocion::where('nombre','<>','NINGUNO')->get();
@@ -24,16 +25,17 @@ class HomeController extends Controller
         $somos      = Somos::all();
         $banner      = Banner::all();
         $listarIndex = '--current';
-    	return view('page.home.index', compact(['productos','categoria','promocion','social','somos','banner', 'listarIndex']));
+    	return view('page.home.index', compact(['productos','categoria','promocion','social','somos','banner', 'listarIndex', 'contactos']));
     }
 
     public function somos()
     {
+        $contactos  = Contacto::all();
         $categoria  = Categoria::all();
         $somos      = Somos::all();
         $social     = Social::all();
         $listarSomos = '--current';
-        return view('page.home.somos', compact(['categoria','somos','social','listarSomos']));
+        return view('page.home.somos', compact(['categoria','somos','social','listarSomos', 'contactos']));
     }
 
     public function noticias()
