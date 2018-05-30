@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Promocion;
 use App\Models\Categoria;
+use App\Models\Contacto;
 use App\Models\Social;
 use App\Models\Somos;
 use App\Models\Producto;
@@ -15,6 +16,7 @@ class PromocionController extends Controller
 {    
     public function show($slug)
     {
+        $contactos  = Contacto::all();
     	$promocion = Promocion::Slug($slug)->get();
     	foreach($promocion as $row):
     		$IdPromocion = $row->id;
@@ -25,6 +27,6 @@ class PromocionController extends Controller
     	$social    = Social::all();
     	$somos    = Somos::all();
         $noticias   = Noticia::all();
-    	return view('page.promocion.show', compact(['promocion','categorias','categoria','social','somos','producto','noticias']));
+    	return view('page.promocion.show', compact(['promocion','categorias','categoria','social','somos','producto','noticias','contactos']));
     }
 }

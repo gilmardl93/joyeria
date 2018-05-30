@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Page\Categoria;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Categoria;
+use App\Models\Contacto;
 use App\Models\Social;
 use App\Models\Somos;
 use App\Models\Promocion;
@@ -15,6 +16,7 @@ class CategoriaController extends Controller
 {
     public function show($slug)
     {
+        $contactos  = Contacto::all();
     	$categoria 	= Categoria::Slug($slug)->get();
     	foreach($categoria as $row):
     		$IdCategoria = $row->id;
@@ -25,6 +27,6 @@ class CategoriaController extends Controller
     	$somos    	= Somos::all();
     	$promocion 	= Promocion::all();
         $noticias   = Noticia::all();
-    	return view('page.categoria.show', compact(['categorias','categoria','social','somos','promocion','producto','noticias']));
+    	return view('page.categoria.show', compact(['categorias','categoria','social','somos','promocion','producto','noticias','contactos']));
     }
 }
